@@ -34,3 +34,6 @@
 
 # FRP
 /dev/block/platform/msm_sdcc.1/by-name/frp               u:object_r:frp_block_device:s0
+
+# Thermanager
+/(vendor|system/vendor)/bin/thermanager		u:object_r:thermanager_exec:s0
