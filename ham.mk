@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
 
+# Perf
+PRODUCT_PACKAGES += \
+    libshims_atomic
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_ham
