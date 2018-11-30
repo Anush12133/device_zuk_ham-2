@@ -41,3 +41,8 @@
 
 # Thermanager
 /(vendor|system/vendor)/bin/thermanager		u:object_r:thermanager_exec:s0
+
+# healthd
+/sys/devices/f9967000.i2c/i2c-0/0-0055/power_supply(/.*)?          u:object_r:sysfs_batteryinfo:s0
+/sys/devices/qpnp-bms-10/power_supply(/.*)?                        u:object_r:sysfs_batteryinfo:s0
+/sys/devices/qpnp-charger-14/power_supply(/.*)?                    u:object_r:sysfs_batteryinfo:s0
