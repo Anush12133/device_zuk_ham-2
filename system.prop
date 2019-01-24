@@ -61,3 +61,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # UI
 sys.use_fifo_ui=1
+
+# Privileged permission whitelisting
+ro.control_privapp_permissions=enforce
