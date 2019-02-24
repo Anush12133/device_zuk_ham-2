@@ -74,23 +74,23 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PROPERTY_OVERRIDES += \
-     ro.config.vc_call_vol_steps=6 \
-     mm.enable.sec.smoothstreaming=true \
-     audio.deep_buffer.media=true \
-     audio.offload.video=true \
-     av.streaming.offload.enable=true \
-     media.aac_51_output_enabled=true \
-     audio.offload.pcm.16bit.enable=true \
-     audio.offload.pcm.24bit.enable=true \
-     persist.vendor.audio.fluence.voicecall=true \
-     ro.audio.flinger_standbytime_ms=300 \
-     ro.vendor.audio.sdk.fluencetype=fluence \
-     vendor.audio_hal.period_size=192 \
-     vendor.audio.offload.buffer.size.kb=32 \
-     vendor.audio.offload.gapless.enabled=true \
-     vendor.audio.offload.multiple.enabled=false \
-     vendor.audio.tunnel.encode=true \
-     vendor.dedicated.device.for.voip=true
+    ro.config.vc_call_vol_steps=6 \
+    mm.enable.sec.smoothstreaming=true \
+    audio.deep_buffer.media=true \
+    audio.offload.video=true \
+    av.streaming.offload.enable=true \
+    media.aac_51_output_enabled=true \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    persist.vendor.audio.fluence.voicecall=true \
+    ro.audio.flinger_standbytime_ms=300 \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    vendor.audio_hal.period_size=192 \
+    vendor.audio.offload.buffer.size.kb=32 \
+    vendor.audio.offload.gapless.enabled=true \
+    vendor.audio.offload.multiple.enabled=false \
+    vendor.audio.tunnel.encode=true \
+    vendor.dedicated.device.for.voip=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -156,7 +156,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
-#    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -191,10 +190,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
-
-# Perf
-PRODUCT_PACKAGES += \
-    libshims_atomic
 
 # Recovery
 PRODUCT_PACKAGES += \

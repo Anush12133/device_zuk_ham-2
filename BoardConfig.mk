@@ -88,10 +88,6 @@ BOARD_USES_ALSA_AUDIO := true
 USE_XML_AUDIO_POLICY_CONF := 1
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Bionic
-TARGET_LD_SHIM_LIBS := \
-    /vendor/bin/mpdecision|libshims_atomic.so
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -107,9 +103,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-
-# Lineage Hardware
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
@@ -186,7 +179,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 # Power
 TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_WLAN_STATS := true
-TARGET_USES_INTERACTION_BOOST := true
 
 # QCRIL
 TARGET_RIL_VARIANT := caf
