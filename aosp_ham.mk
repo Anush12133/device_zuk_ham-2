@@ -29,6 +29,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # AospExtended-BuildType
 EXTENDED_BUILD_TYPE := OFFICIAL
 
+# Use Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm
+IS_PHONE := true
+
 # Ditch Via, Build Jelly
 TARGET_USE_JELLY := true
 
